@@ -2,4 +2,4 @@
 ---
 # 使用方法
 ### 1、chrome安装油猴插件
-### 2、复制index.js的全部内容到油猴新建脚本
+### 2、复制[index.js](https://github.com/2359634711/dyTool/blob/master/index.js)的全部内容到油猴新建脚本
