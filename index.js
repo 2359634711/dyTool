@@ -124,5 +124,11 @@
         setTimeout(() => {
             window.onresize()
         }, 1000)
+        setTimeout(() => {
+            window.onresize()
+        }, 2000)
+        setTimeout(() => {
+            window.onresize()
+        }, 3000)
     }
 }())
