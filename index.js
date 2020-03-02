@@ -1,26 +1,19 @@
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+//@match        http://jwgl.nepu.edu.cn/*
+//@match        http://jwgl.nepu.edu.cn/dwr/engine.js
+// @grant        none
+// @require    file:///home/root1/jiaowu/index.js
+// ==/UserScript==
+
+
+
+
 (function s() {
-    // dwr.engine.endBatch = function (options) {
-    //     Object.defineProperty(dwr.engine._batch, 'async', { get: function () { return true } })
-    //     var batch = dwr.engine._batch;
-    //     if (batch == null) {
-    //         dwr.engine._handleError(null, { name: "dwr.engine.batchNotBegun", message: "No batch in progress" });
-    //         return;
-    //     }
-    //     dwr.engine._batch = null;
-    //     if (batch.map.callCount == 0) return;
-
-    //     // The hooks need to be merged carefully to preserve ordering
-    //     if (options) dwr.engine._mergeBatch(batch, options);
-
-    //     // In ordered mode, we don't send unless the list of sent items is empty
-    //     if (dwr.engine._ordered && dwr.engine._batchesLength != 0) {
-    //         dwr.engine._batchQueue[dwr.engine._batchQueue.length] = batch;
-    //     }
-    //     else {
-    //         dwr.engine._sendData(batch);
-    //     }
-    // }
-
     document.selection = {
         empty: () => { }
     }
@@ -132,10 +125,4 @@
             window.onresize()
         }, 1000)
     }
-
-
-
-
-
-    console.log(12)
 }())
